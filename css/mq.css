@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px){
+     .card {
+        width: calc(25% - 1rem);
+    }
+
+    .card-cnt{
+        flex-wrap: wrap;
+    }
+}
