@@ -22,11 +22,6 @@ main{
     overflow-y: auto;
 }
 
-footer{
-    min-height: 10vh;
-    background-color: var(--footer-color);
-}
-
 .call-to-action{
     height: 10vh;
     background-color: var(--secondary-color);
@@ -82,6 +77,11 @@ img{
     overflow: hidden;
 }
 
+
+/* ASIDE */
+
+
+
 /* MAIN */
 .call-to-action a{
     background-color: transparent;
@@ -119,6 +119,8 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 10vh;
+    background-color: var(--footer-color);
 }
 
 .ft-cnt img{
