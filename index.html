@@ -17,34 +17,47 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-
+        
         <div class="d-flex">
             <aside>
-                <header>
+                <header class="aside-header">
                     <img src="img/logo.svg" alt="">
                 </header>
 
-                <nav>
-                    <div><i class="fa-solid fa-house"></i>Home</div>
-                    <div><i class="fa-solid fa-magnifying-glass"></i>Cerca</div>
-                    <div><i class="fa-solid fa-house"></i>La tua libreria</div>
+                <nav class="aside-nav">
+                    <div><img src="img/home.svg" alt="Home"><a href="#">Home</a></div>
+                    <div><img src="img/search.svg" alt="Search"><a href="#">Cerca</a></div>
+                    <div><img src="img/libreria.svg" alt="Library"><a href="#">La tua libreria</a></div>
                 </nav>
 
                 <div class="playlist">
                     <h3>Playlist</h3>
                     <div>
-                        <div class="create-playlist"><i class="fa-solid fa-plus"></i>Crea Playlist</div>
+                        <div class="create-playlist"><i class="fa-solid fa-plus btn"></i>Crea Playlist</div>
                     </div>
-                    <div>content</div>
-                    <div>content</div>
-                    <div>content</div>
-                    <div>content</div>
-                    <div>content</div>
-                    <div>content</div>
-                    <div>content</div>
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
                 </div>
 
-                <footer></footer>
+                <footer class="aside-footer">
+                    <div class="dl-app">
+                        <img src="img/download.svg" alt="download">
+                        <span>Installa app</span>
+                    </div>
+
+                    <hr>
+                    <div class="profile">
+                        <img src="img/profile.svg" alt="Profile">
+                        <h5>John Doe</h5>
+                    </div>
+                </footer>
             </aside>
 
             <main>
@@ -54,122 +67,118 @@
                 
                 <nav class="main-navbar">
                     <ul>
-                        <li>content</li>
-                        <li>content</li>
-                        <li>content</li>
-                        <li>content</li>
-                        <li>content</li>
-                        <li>content</li>
+                        <li><a href="#" class="active">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>                      
                     </ul>
                 </nav>
 
                 <div class="title-cnt">
-                    <h2>content</h2>
+                    <h2>Recently played</h2>
                 </div>
                 <!-- sezione ascoltati di recente  -->
                 <div class="card-cnt">
                     <div class="card">
                         <div class="img-cnt">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <img src="img/metal_lifting.jpg" alt="Heavy Metal">
                         </div>
 
-                        <h3>content</h3>
-                        <p>content</p>
+                        <h3>Heavy Metal</h3>
+                        <p>Subtitle</p>
                     </div>
 
                     <div class="card">
                         <div class="img-cnt">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <img src="img/stranger.jpeg" alt="Stranger Things Theme">
                         </div>
 
-                        <h3>content</h3>
-                        <p>content</p>
+                        <h3>Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                        <p>Kyle Dixon & Michael Stein</p>
                     </div>
 
                     <div class="card">
                         <div class="img-cnt">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <img src="img/aquietplace.jpeg" alt="A Quiet Place">
                         </div>
 
-                        <h3>content</h3>
-                        <p>content</p>
+                        <h3>A Quiet Place</h3>
+                        <p>Subtitle</p>
                     </div>
 
                     <div class="card">
                         <div class="img-cnt">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <img src="img/split.jpeg" alt="Split">
                         </div>
 
-                        <h3>content</h3>
-                        <p>content</p>
+                        <h3>Split</h3>
+                        <p>Subtitle</p>
                     </div>
 
                     <div class="card">
                         <div class="img-cnt">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <img src="img/cure.jpeg" alt="A cure for Wellness">
                         </div>
 
-                        <h3>content</h3>
-                        <p>content</p>
+                        <h3>A cure for Wellness</h3>
+                        <p>Subtitle</p>
                     </div>
 
                     <div class="card">
                         <div class="img-cnt">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <img src="img/sinister.jpeg" alt="Sinister">
                         </div>
 
-                        <h3>content</h3>
-                        <p>content</p>
+                        <h3>Sinister</h3>
+                        <p>Subtitle</p>
                     </div>
                 </div>
                 <!-- sezione creato per te  -->
                 <div class="title-cnt">
-                    <h2>content</h2>
-                    <p>content</p>
+                    <h2>Creato per John Doe</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
                 </div>
 
                 <div class="card-cnt">
                     <div class="card">
                         <div class="img-cnt">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <img src="img/radar.jpeg" alt="Release radar">
                         </div>
 
-                        <h3>content</h3>
-                        <p>content</p>
+                        <h3>Release radar</h3>
                     </div>
 
                     <div class="card">
                         <div class="img-cnt">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <img src="img/mixdaily.jpeg" alt="Stranger Things">
                         </div>
 
-                        <h3>content</h3>
-                        <p>content</p>
+                        <h3>Daily Mix 1</h3>
                     </div>
                 </div>
                 <!-- sezione artisti popolari -->
                 <div class="title-cnt">
-                    <h2>content</h2>
-                    <p>content</p>
+                    <h2>Artisti più popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
                 </div>
 
                 <div class="card-cnt">
                     <div class="card">
                         <div class="img-cnt rounded">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
                         </div>
 
-                        <h3>content</h3>
-                        <p>content</p>
+                        <h3>Ludovico Einaudi</h3>
                     </div>
 
                     <div class="card">
                         <div class="img-cnt rounded">
-                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <img src="https://i.scdn.co/image/ab6761610000e5eb7695fb8ac766d3c79491974c" alt="Wardruna">
                         </div>
 
-                        <h3>content</h3>
-                        <p>content</p>
+                        <h3>Wardruna</h3>
                     </div>
                 </div>
             
@@ -182,15 +191,15 @@
         <footer class="ft-cnt">
             
                <div class="ft-fi one">
-                    <img src="img/sinister.jpeg" alt="">
+                    <img src="https://www.ibs.it/images/7090014387375_0_536_0_75.jpg" alt="Helvegen">
 
                     <div class="song-info">
-                        <h5>content</h5>
-                        <h6>content</h6>
+                        <h5>Helvegen</h5>
+                        <h6>Wardruna</h6>
                     </div>
 
                     <div class="song-actions">
-                        <i class="fa-solid fa-folder"></i>
+                        <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-folder"></i>
                     </div>
                     
@@ -198,25 +207,25 @@
 
                 <div class="ft-fi two">
                     <div class="player">
-                        <i class="fa-solid fa-folder"></i>
-                        <i class="fa-solid fa-folder"></i>
-                        <i class="fa-solid fa-folder"></i>
-                        <i class="fa-solid fa-folder"></i>
-                        <i class="fa-solid fa-folder"></i>
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
                     </div>
 
                     <div class="player-bar">
                         <h6>0:25</h6>
-                        <div class="bar">contentcontentcontentcontentcontent</div>
+                        <div class="bar"></div>
                         <h6>4:35</h6>
                     </div>
                 </div>
 
                 <div class="ft-fi three">
-                    <i class="fa-solid fa-folder"></i>
-                    <i class="fa-solid fa-folder"></i>
-                    <i class="fa-solid fa-folder"></i>
-                    <div class="bar">contentcontentcontent</div>
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="side-bar"></div>
                 </div>
             
         </footer>
