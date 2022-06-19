@@ -25,11 +25,13 @@ main{
 .call-to-action{
     height: 10vh;
     background-color: var(--secondary-color);
+    opacity: .9;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 aside{
@@ -92,12 +94,24 @@ img{
     cursor: pointer;
 }
 
+.btn:hover{
+    background-color: #fff;
+}
+
 
 /* ASIDE */
 
 .aside-header, .aside-nav, .playlist, .aside-footer{
     margin: 1rem 1.5rem;
     color: var(--text-color-grey);
+}
+
+.aside-nav div{
+    margin-bottom: .3rem;
+}
+
+.aside-nav a:hover{
+    color: #fff;
 }
 
 .playlist *{
@@ -112,6 +126,8 @@ img{
 .playlist ul li{
     list-style: none;
     font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
 }
 
 .aside-header img{
@@ -133,6 +149,11 @@ img{
     position: fixed;
     bottom: 10%;
     left: 0;
+}
+
+.dl-app img, .dl-app span, .song-info, .song-actions,
+.bar, .three, .aside-header img{
+    cursor: pointer;
 }
 
 .dl-app, .profile *{
@@ -166,6 +187,12 @@ hr{
     padding: .5rem 2rem;
     text-decoration: none;
     color: #fff;
+    margin-right: .8rem;
+}
+
+.call-to-action a:hover, .ft-cnt .two i:hover,
+.song-actions i:hover{
+    transform: scale(1.1);
 }
 
 .main-navbar{
@@ -186,6 +213,11 @@ hr{
     font-weight: bold;
 }
 
+.main-navbar ul li a:hover, .playlist div:hover, 
+.playlist li:hover, .dl-app:hover img, .dl-app:hover span{
+    color: #fff;
+}
+
 .main-navbar .active{
     border-bottom: 2px solid lightgreen;
 }
@@ -199,6 +231,37 @@ hr{
     margin: 1rem .5rem;
 }
 
+.img-cnt{
+    position: relative;
+    cursor: pointer;
+}
+
+.img-cnt img{
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.795);
+    display: none;
+}
+
+.overlay i{
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-cnt:hover .overlay{
+    display: block;
+}
 
 /* FOOTER */
 .ft-cnt{
@@ -239,15 +302,37 @@ hr{
 .bar{
     width: 600px;
     height: 5px;
-    background-color: var(--text-color-grey);
+    background-color: rgb(88, 86, 86);
     border-radius: 5px;
+    /* position: relative; */
 }
+
+/* TICKET */ 
+
+/* .inner-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    width: 20%;
+    height: 5px;
+} */
+
+/* ALLINEAMENTO ORIZZONTALE DEGLI ELEMENTI  */
+
+/* EFFETTO ACTIVE SULLA MAIN-NAVBAR */
+
+/* FINE TICKET  */
 
 .side-bar{
     width: 150px;
     height: 5px;
-    background-color: var(--text-color-grey);
+    background-color: rgb(88, 86, 86);
     border-radius: 5px;
+}
+
+.song-info h5:hover, .song-info h6:hover{
+    text-decoration: underline;
 }
 
 
