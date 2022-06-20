@@ -8,7 +8,7 @@ html{
     font-family: 'Open Sans', sans-serif;;
 }
 
-body{
+.d-flex{
     overflow: hidden;
 }
 
@@ -278,14 +278,17 @@ hr{
 }
 
 /* FOOTER */
+.main-footer{
+    height: 10vh;
+}
+
 .ft-cnt{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
     background-color: var(--footer-color);
     z-index: 999;
-    flex-shrink: 0;
+    height: 10vh;
 }
 
 .ft-cnt img{
@@ -321,6 +324,46 @@ hr{
     height: 5px;
     background-color: rgb(88, 86, 86);
     border-radius: 5px;
+    position: relative;
+}
+
+.inner-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--text-color-grey);
+    width: 20%;
+    height: 5px;
+    margin: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.bar:hover .inner-bar{
+    background-color: lightgreen;
+}
+
+.bar:hover .circle{
+    display: block;
+}
+
+.side-bar:hover .inner-bar{
+    background-color: lightgreen;
+}
+
+.side-bar:hover .circle{
+    display: block;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    left: 85%;
+    display: none;
 }
 
 .side-bar{
@@ -328,6 +371,7 @@ hr{
     height: 5px;
     background-color: rgb(88, 86, 86);
     border-radius: 5px;
+    position: relative;
 }
 
 .song-info h5:hover, .song-info h6:hover{
