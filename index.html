@@ -20,36 +20,53 @@
         
         <div class="d-flex">
             <aside>
-                <header class="aside-header">
-                    <img src="img/logo.svg" alt="Logo">
-                </header>
-
-                <nav class="aside-nav">
-                    <div><img src="img/home.svg" alt="Home"><a href="#">Home</a></div>
-                    <div><img src="img/search.svg" alt="Search"><a href="#">Cerca</a></div>
-                    <div><img src="img/libreria.svg" alt="Library"><a href="#">La tua libreria</a></div>
-                </nav>
-
-                <div class="playlist">
-                    <h3>Playlist</h3>
-                    <div>
-                        <div class="create-playlist"><i class="fa-solid fa-plus btn"></i><strong>Crea Playlist</strong></div>
+                <div class="aside-top">
+                    <header class="aside-header">
+                        <img src="img/logo.svg" alt="Logo" class="icon">
+                    </header>
+    
+                    <nav class="aside-nav">
+                        <div><img src="img/home.svg" alt="Home" class="icon"><a href="#">Home</a></div>
+                        <div><img src="img/search.svg" alt="Search" class="icon"><a href="#">Cerca</a></div>
+                        <div><img src="img/libreria.svg" alt="Library" class="icon"><a href="#">La tua libreria</a></div>
+                    </nav>
+                    
+                    <div class="playlist">
+                        <h3>Playlist</h3>
+                        <div>
+                            <div class="create-playlist"><i class="fa-solid fa-plus btn"></i><strong>Crea Playlist</strong></div>
+                        </div>
+                        <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>                     
                     </div>
-                    <ul>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                    </ul>
                 </div>
+                <!-- solo icone per mobile, ora in display:none; -->
+                <div class="hidden-content">
+                    <div class="hidden-top">
+                        <div class="hidden"><img src="img/logo-small.svg" alt="Logo" class="icon"></div>
+                        <div class="hidden"><img src="img/home.svg" alt="Home"></div>
+                        <div class="hidden"><img src="img/search.svg" alt="Search"></div>
+                        <div class="hidden"><img src="img/libreria.svg" alt="Library"></div>
+                    </div>
+
+                    <div class="hidden-bottom">
+                        <div class="hidden"><img src="img/download.svg"></div>
+                        <div class="hidden"><img src="img/profile.svg" class="icon"></div>
+                    </div>
+                </div>
+                <!-- fine icone mobile -->
 
                 <footer class="aside-footer">
                     <div class="dl-app">
                         <img src="img/download.svg" alt="download">
-                        <span>Installa app</span>
+                        <h6>Installa app</h6>
                     </div>
 
                     <hr>
@@ -198,48 +215,46 @@
         
         
 
-        <footer class="ft-cnt">
-            
-               <div class="ft-fi one">
-                    <img src="https://www.ibs.it/images/7090014387375_0_536_0_75.jpg" alt="Helvegen">
-
-                    <div class="song-info">
-                        <h5>Helvegen</h5>
-                        <h6>Wardruna</h6>
-                    </div>
-
-                    <div class="song-actions">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-folder"></i>
-                    </div>
-                    
-                </div>
-
-                <div class="ft-fi two">
-                    <div class="player">
-                        <i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-solid fa-play"></i>
-                        <i class="fa-solid fa-forward-step"></i>
-                        <i class="fa-solid fa-arrow-rotate-right"></i>
-                    </div>
-
-                    <div class="player-bar">
-                        <h6>0:25</h6>
-                        <div class="bar">
-                            <!-- <div class="inner-bar"></div> -->
-                            <!-- ticket -->
-                        </div>
-                        <h6>4:35</h6>
-                    </div>
-                </div>
-
-                <div class="ft-fi three">
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-solid fa-desktop"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                    <div class="side-bar"></div>
-                </div>
+        <footer class="main-footer">
+            <div class="ft-cnt">
+                <div class="ft-fi one">
+                     <img src="https://www.ibs.it/images/7090014387375_0_536_0_75.jpg" alt="Helvegen">
+ 
+                     <div class="song-info">
+                         <h5>Helvegen</h5>
+                         <h6>Wardruna</h6>
+                     </div>
+ 
+                     <div class="song-actions">
+                         <i class="fa-solid fa-heart"></i>
+                         <i class="fa-solid fa-folder"></i>
+                     </div>
+                     
+                 </div>
+ 
+                 <div class="ft-fi two">
+                     <div class="player">
+                         <i class="fa-solid fa-shuffle"></i>
+                         <i class="fa-solid fa-backward-step"></i>
+                         <i class="fa-solid fa-play"></i>
+                         <i class="fa-solid fa-forward-step"></i>
+                         <i class="fa-solid fa-arrow-rotate-right"></i>
+                     </div>
+ 
+                     <div class="player-bar">
+                         <h6>0:25</h6>
+                         <div class="bar"></div>
+                         <h6>4:35</h6>
+                     </div>
+                 </div>
+ 
+                 <div class="ft-fi three">
+                     <i class="fa-solid fa-list"></i>
+                     <i class="fa-solid fa-desktop"></i>
+                     <i class="fa-solid fa-volume-high"></i>
+                     <div class="side-bar"></div>
+                 </div>
+            </div>
             
         </footer>
 
