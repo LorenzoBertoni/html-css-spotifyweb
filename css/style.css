@@ -392,3 +392,7 @@ main{
 .song-info h5:hover, .song-info h6:hover{
     text-decoration: underline;
 }
+
+.footer-hid-cont{
+    display: none;
+}
