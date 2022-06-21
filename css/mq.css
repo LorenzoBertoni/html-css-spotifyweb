@@ -53,6 +53,11 @@
        display: none;
     }
 
+    .hidden-content{
+        display: flex;
+        flex-direction: column;
+    }
+
     .hidden{
         display: block;
         width: 50%;
